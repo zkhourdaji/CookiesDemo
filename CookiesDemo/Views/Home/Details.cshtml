@@ -1,0 +1,19 @@
+﻿@model ValueTuple<string,string>
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<table class="table">
+  
+    <tr>
+        <th>Key</th>
+        <td>@Model.Item1</td>
+    </tr>
+
+    <tr>
+        <th>Value</th>
+        <td>@Model.Item2</td>
+    </tr>
+</table>

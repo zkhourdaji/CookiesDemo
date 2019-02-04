@@ -1,0 +1,13 @@
+﻿@model ValueTuple<string,string>
+@* //TODO: How to name key value pair *@
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<form asp-action="Edit" asp-controller="Home" method="POST">
+    <input name="key" value="@Model.Item1"/>
+    <input name="newValue" value="@Model.Item2"/>
+    <input type="submit" value="Edit"/>
+</form>
